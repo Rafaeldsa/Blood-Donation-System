@@ -4,10 +4,12 @@ class CreateDonors < ActiveRecord::Migration[6.0]
       t.string :nome
       t.string :tipo
       t.integer :idade
-      t.string :email
+      t.string :email, null: false
       t.string :senha
 
       t.timestamps
     end
+
+    add_index :donors, :email, unique: true
   end
 end
