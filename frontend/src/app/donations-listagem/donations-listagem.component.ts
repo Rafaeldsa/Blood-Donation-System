@@ -9,16 +9,27 @@ import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 })
 export class DonationsListagemComponent implements OnInit {
   donations: Array<any>;
+  isFavorited: Boolean;
 
   constructor(private donationService: DonationService) {}
 
   ngOnInit(): void {
     this.listar();
+    this.favoritar;
   }
 
   listar() {
     this.donationService
       .listar()
       .subscribe((dados) => (this.donations = dados));
+  }
+
+  favoritar() {
+    this.isFavorited = false;
+    if (this.isFavorited == false) {
+      this.isFavorited = true;
+    } else {
+      this.isFavorited = false;
+    }
   }
 }
