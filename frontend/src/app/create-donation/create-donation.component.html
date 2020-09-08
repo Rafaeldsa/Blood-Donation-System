@@ -1,0 +1,40 @@
+<h1>Crie sua Doação</h1>
+
+<hr />
+<main>
+  <form (ngSubmit)="cadastro()" [formGroup]="formCadastro">
+    <fieldset>
+      <legend>Dados</legend>
+
+      <div class="input-block">
+        <label>Nome</label>
+        <input type="text" formControlName="doador" />
+      </div>
+      <div class="input-block">
+        <label>Tipo Sanguíneo</label>
+        <input type="text" formControlName="tipo" />
+      </div>
+      <div class="input-block">
+        <label>Cidade</label>
+        <input type="text" formControlName="cidade" />
+      </div>
+      <div class="input-block">
+        <label>Estado</label>
+        <input type="text" formControlName="estado" />
+      </div>
+      <div class="input-block">
+        <label>Data</label>
+        <input type="text" formControlName="data" />
+      </div>
+    </fieldset>
+
+    <footer>
+      <p>
+        <img src="" alt="Aviso importante" />
+        Importante! <br />
+        Preencha todos os dados
+      </p>
+      <button type="submit">Salvar Cadastro</button>
+    </footer>
+  </form>
+</main>
