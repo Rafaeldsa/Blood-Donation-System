@@ -16,4 +16,8 @@ export class DonationService {
   create(donation) {
     return this.http.post(`${this.donationUrl}`, donation);
   }
+
+  deletar(id) {
+    return this.http.delete(`${this.donationUrl}/${id}`);
+  }
 }

@@ -1,10 +1,10 @@
 <h1>Doações</h1>
 
 <hr />
-<div id="page-teacher-list" class="container">
+<main>
   <ul>
     <li *ngFor="let d of donations">
-      <article class="teacher-item"></article>
+      <article class="donation-item"></article>
       <header id="header">
         <div id="div2">
           <strong>{{ d.doador }}</strong>
@@ -21,7 +21,8 @@
           <img src="../../assets/heart.png" alt="favorite" /> :
           <img src="../../assets/unfavorite.png" alt="unfavorite" />
         </button>
+        <button (click)="deletar(d.id)">Deletar</button>
       </footer>
     </li>
   </ul>
-</div>
+</main>

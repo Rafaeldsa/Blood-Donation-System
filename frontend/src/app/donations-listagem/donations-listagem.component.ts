@@ -23,7 +23,13 @@ export class DonationsListagemComponent implements OnInit {
       .listar()
       .subscribe((dados) => (this.donations = dados));
   }
-
+  deletar(id) {
+    console.log(id);
+    this.donationService.deletar(id).subscribe(
+      (succcess) => console.log('sucesso'),
+      (error) => console.log(error)
+    );
+  }
   favoritar() {
     this.isFavorited = false;
     if (this.isFavorited == false) {

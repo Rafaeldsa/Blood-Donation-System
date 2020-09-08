@@ -22,15 +22,13 @@ export class LoginUserComponent implements OnInit {
   getDonors() {
     this.loginService.getDonors().subscribe((dados) => {
       this.donors = dados;
-      console.log(dados);
-      console.log(this.donors);
     });
   }
 
   login() {
     this.loginService.login(this.formLogin.value).subscribe(
-      (succcess) => console.log('sucesso'),
-      (error) => console.log(error)
+      (succcess) => alert('sucesso'),
+      (error) => alert('Erro no Login')
     );
   }
 }

@@ -25,8 +25,8 @@ export class CreateDonationComponent implements OnInit {
   }
   cadastro() {
     this.donationService.create(this.formCadastro.value).subscribe(
-      (succcess) => console.log('sucesso'),
-      (error) => console.log(error)
+      (succcess) => alert('sucesso'),
+      (error) => alert(error)
     );
   }
 }

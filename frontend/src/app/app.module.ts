@@ -9,6 +9,7 @@ import { DonationService } from './donation.service';
 import { CreateDonationComponent } from './create-donation/create-donation.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { CreateDonorComponent } from './create-donor/create-donor.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CreateDonorComponent } from './create-donor/create-donor.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    routing,
   ],
 
   providers: [DonationService],
