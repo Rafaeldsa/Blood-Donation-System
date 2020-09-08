@@ -1,0 +1,40 @@
+<h1>Realize seu Cadastro</h1>
+
+<hr />
+<main>
+  <form (ngSubmit)="cadastro()" [formGroup]="formCadastroDonor">
+    <fieldset>
+      <legend>Dados</legend>
+
+      <div class="input-block">
+        <label>Nome</label>
+        <input type="text" formControlName="nome" />
+      </div>
+      <div class="input-block">
+        <label>Tipo Sanguíneo</label>
+        <input type="text" formControlName="tipo" />
+      </div>
+      <div class="input-block">
+        <label>Idade</label>
+        <input type="number" formControlName="idade" />
+      </div>
+      <div class="input-block">
+        <label>Email</label>
+        <input type="email" formControlName="email" />
+      </div>
+      <div class="input-block">
+        <label>Senha</label>
+        <input type="password" formControlName="senha" />
+      </div>
+    </fieldset>
+
+    <footer>
+      <p>
+        <img src="" alt="Aviso importante" />
+        Importante! <br />
+        Preencha todos os dados
+      </p>
+      <button type="submit">Salvar Cadastro</button>
+    </footer>
+  </form>
+</main>

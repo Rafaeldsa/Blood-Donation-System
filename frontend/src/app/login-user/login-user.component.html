@@ -1,3 +1,25 @@
 <h1>Login</h1>
 
 <hr />
+
+<main>
+  <form (ngSubmit)="login()" [formGroup]="formLogin">
+    <fieldset>
+      <legend>Realize seu Login</legend>
+
+      <div class="input-block">
+        <label>Email</label>
+        <input type="email" formControlName="email" />
+      </div>
+      <div class="input-block">
+        <label>Senha</label>
+        <input type="password" formControlName="senha" />
+      </div>
+    </fieldset>
+
+    <footer>
+      <button type="submit">Login</button>
+      <a href="/">Realizar Cadastro</a>
+    </footer>
+  </form>
+</main>

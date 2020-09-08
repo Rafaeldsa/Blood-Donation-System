@@ -8,6 +8,7 @@ import { DonationsListagemComponent } from './donations-listagem/donations-lista
 import { DonationService } from './donation.service';
 import { CreateDonationComponent } from './create-donation/create-donation.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { CreateDonorComponent } from './create-donor/create-donor.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LoginUserComponent } from './login-user/login-user.component';
     DonationsListagemComponent,
     CreateDonationComponent,
     LoginUserComponent,
+    CreateDonorComponent,
   ],
   imports: [
     BrowserModule,
