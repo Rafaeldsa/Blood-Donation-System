@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { LoginService } from '../login.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login-user',
   templateUrl: './login-user.component.html',
@@ -26,9 +27,10 @@ export class LoginUserComponent implements OnInit {
   }
 
   login() {
-    this.loginService.login(this.formLogin.value).subscribe(
-      (succcess) => alert('sucesso'),
-      (error) => alert('Erro no Login')
-    );
+    let checkLogin = (user) => {
+      return user.email === this.formLogin.value.email;
+    };
+    const userLogado = this.donors.filter(checkLogin);
+    console.log(userLogado);
   }
 }

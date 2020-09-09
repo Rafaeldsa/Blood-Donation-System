@@ -67,10 +67,20 @@ footer button:hover {
   background: var(--color-secundary-dark);
 }
 
-#div2 span {
-  font-size: 1.6rem;
-  display: block;
-  margin-top: 0.4rem;
+main a {
+  width: 10rem;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.4rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.2s;
+  text-decoration: none;
 }
 
 @media (min-width: 700px) {
@@ -86,6 +96,11 @@ footer button:hover {
 
   footer button {
     width: 24.5rem;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+  main a {
+    width: 50.5rem;
     font-size: 1.6rem;
     justify-content: center;
   }
