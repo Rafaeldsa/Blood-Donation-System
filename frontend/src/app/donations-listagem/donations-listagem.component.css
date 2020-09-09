@@ -66,7 +66,6 @@ footer button {
 footer button:hover {
   background: var(--color-secundary-dark);
 }
-
 main a {
   width: 10rem;
   height: 5.6rem;
@@ -83,6 +82,12 @@ main a {
   text-decoration: none;
 }
 
+#div2 span {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
 @media (min-width: 700px) {
   main {
     max-width: 100%;
@@ -93,14 +98,14 @@ main a {
     max-width: 740px;
     margin: 0 auto;
   }
-
-  footer button {
+  main a {
     width: 24.5rem;
     font-size: 1.6rem;
     justify-content: center;
   }
-  main a {
-    width: 50.5rem;
+
+  footer button {
+    width: 24.5rem;
     font-size: 1.6rem;
     justify-content: center;
   }
