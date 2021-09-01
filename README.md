@@ -1,2 +1,2 @@
 # Blood-Donation-System
-#roi
+Desenvolvido com Ruby e Angular.
